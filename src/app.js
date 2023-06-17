@@ -1,11 +1,7 @@
 import {Server} from 'socket.io'
-// import express from 'express'
-// import * as http from 'http'
 
 const PORT = 4000
 
-// const app = express()
-// const server = http.createServer(app)
 const io = new Server(PORT)
 
 io.on('connection', socket => {
@@ -22,6 +18,3 @@ io.on('connection', socket => {
     })
 })
 
-// server.listen(PORT, () => {
-//     console.log(`Server started on port ${PORT}`)
-// })
